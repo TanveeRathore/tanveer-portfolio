@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tanveer Rathore | Web Developer — Rajasthan</title>
+  <meta name="description" content="Tanveer Rathore — Web Developer from Tibbi, Rajasthan. Building premium websites and e-commerce stores."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ══ CURSOR GLOW ════════════════════════════ -->
+<div class="cursor-glow" id="cursor-glow"></div>
+
+<!-- ══ LOADER ════════════════════════════════ -->
+<div id="loader">
+  <div class="loader-text">&lt;Tanveer /&gt;</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<!-- ══ NAVBAR ════════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">&lt;<span>TR</span>/&gt;</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:tanveerrthore24@gmail.com" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+  </div>
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about" onclick="closeMobileMenu()">About</a>
+    <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+    <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+    <a href="#education" onclick="closeMobileMenu()">Education</a>
+    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  </div>
+</nav>
+
+<!-- ══ HERO SECTION ═══════════════════════════ -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <img src="images/hero-bg.png" alt="bg"/>
+    <div class="hero-bg-overlay"></div>
+  </div>
+  <!-- Floating Code Particles -->
+  <div class="particles" id="particles"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="status-dot"></span>
+      Available for Work
+    </div>
+    <div class="hero-greeting">Hello World, I'm</div>
+    <h1 class="hero-name">
+      <span class="name-first">Tanveer</span>
+      <span class="name-last">Rathore</span>
+    </h1>
+    <div class="hero-title">
+      <span class="static-text">I build </span>
+      <span class="dynamic-text" id="dynamic-text"></span>
+      <span class="cursor-blink">|</span>
+    </div>
+    <p class="hero-desc">
+      Self-taught Web Developer from <strong>Tibbi, Rajasthan</strong>. 
+      I craft premium websites and e-commerce experiences that drive real business results.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary"><i class="fas fa-code"></i> View My Work</a>
+      <a href="#contact" class="btn-outline"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="s-num">1+</span><span class="s-label">Project Live</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><span class="s-num">100%</span><span class="s-label">Client Satisfaction</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><span class="s-num">24/7</span><span class="s-label">Support</span></div>
+    </div>
+  </div>
+
+  <div class="hero-image-wrap">
+    <div class="avatar-ring">
+      <div class="avatar-ring-inner">
+        <img src="images/avatar.png" alt="Tanveer Rathore" class="avatar-img"/>
+      </div>
+    </div>
+    <!-- Floating badges -->
+    <div class="float-badge fb-1"><i class="fab fa-html5"></i> HTML5</div>
+    <div class="float-badge fb-2"><i class="fab fa-css3-alt"></i> CSS3</div>
+    <div class="float-badge fb-3"><i class="fab fa-js"></i> JavaScript</div>
+    <div class="float-badge fb-4"><i class="fas fa-mobile-screen"></i> Mobile</div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+    <span>Scroll Down</span>
+  </div>
+</section>
+
+<!-- ══ ABOUT SECTION ══════════════════════════ -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="section-label reveal">About Me</div>
+    <div class="about-grid">
+      <div class="about-text reveal-left">
+        <h2>Passionate Developer<br/><span>From Rajasthan 🏜️</span></h2>
+        <p>
+          Main Tanveer Rathore hoon — Tibbi, Rajasthan se ek self-taught web developer. 
+          Maine coding khud se seekhi aur apne pehle project mein ek <strong>full-scale e-commerce 
+          store</strong> bana diya — Rathore Mobile Store — jo aaj live hai aur real customers 
+          serve kar raha hai.
+        </p>
+        <p>
+          Mera passion hai clean, fast, aur stunning websites banana jo sirf achhi dikhti hi 
+          nahi, balki real business results bhi deti hain. Main especially e-commerce aur 
+          mobile-first design mein specialist hoon.
+        </p>
+        <div class="about-info-grid">
+          <div class="info-item"><span class="info-label"><i class="fas fa-user"></i> Name</span><span>Tanveer Rathore</span></div>
+          <div class="info-item"><span class="info-label"><i class="fas fa-location-dot"></i> Location</span><span>Tibbi, Rajasthan 🇮🇳</span></div>
+          <div class="info-item"><span class="info-label"><i class="fas fa-envelope"></i> Email</span><span>tanveerrthore24@gmail.com</span></div>
+          <div class="info-item"><span class="info-label"><i class="fas fa-phone"></i> Phone</span><span>+91 94615 55827</span></div>
+          <div class="info-item"><span class="info-label"><i class="fas fa-graduation-cap"></i> Education</span><span>12th Pass — N.M.P.G, Hanumangarh</span></div>
+          <div class="info-item"><span class="info-label"><i class="fas fa-briefcase"></i> Status</span><span class="available-badge">✅ Open to Work</span></div>
+        </div>
+        <a href="mailto:tanveerrthore24@gmail.com" class="btn-primary mt-1"><i class="fas fa-download"></i> Contact Me Now</a>
+      </div>
+      <div class="about-right reveal-right">
+        <div class="about-card">
+          <div class="about-card-icon"><i class="fas fa-code"></i></div>
+          <h3>Web Development</h3>
+          <p>Frontend se lekar e-commerce tak — main complete websites deliver karta hoon.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>UI/UX Design</h3>
+          <p>Modern, responsive designs jo mobile aur desktop dono pe perfect dikhti hain.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon"><i class="fas fa-store"></i></div>
+          <h3>E-Commerce Solutions</h3>
+          <p>WhatsApp-integrated stores jo real customers ko real sales mein convert kare.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon"><i class="fas fa-mobile-screen"></i></div>
+          <h3>Mobile-First</h3>
+          <p>Sabse pehle mobile experience — phir desktop. Aaj ka user phone pe hai.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SKILLS SECTION ═════════════════════════ -->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <div class="section-label reveal">My Arsenal</div>
+    <div class="section-hdr reveal">
+      <h2>Skills & <span>Technologies</span></h2>
+      <p>Tools aur technologies jo main use karta hoon premium websites banane ke liye.</p>
+    </div>
+    <div class="skills-grid stagger">
+      <div class="skill-card">
+        <div class="skill-icon html"><i class="fab fa-html5"></i></div>
+        <div class="skill-name">HTML5</div>
+        <div class="skill-level">
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          <span>90%</span>
+        </div>
+        <div class="skill-tag">Semantic, SEO, Structure</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon css"><i class="fab fa-css3-alt"></i></div>
+        <div class="skill-name">CSS3 & Animations</div>
+        <div class="skill-level">
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          <span>85%</span>
+        </div>
+        <div class="skill-tag">Glassmorphism, Animations, Flex/Grid</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon js"><i class="fab fa-js"></i></div>
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-level">
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          <span>75%</span>
+        </div>
+        <div class="skill-tag">DOM, Events, Local Storage</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon git"><i class="fab fa-git-alt"></i></div>
+        <div class="skill-name">Git & GitHub</div>
+        <div class="skill-level">
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          <span>70%</span>
+        </div>
+        <div class="skill-tag">Version Control, GitHub Pages</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon design"><i class="fas fa-wand-magic-sparkles"></i></div>
+        <div class="skill-name">UI/UX Design</div>
+        <div class="skill-level">
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          <span>80%</span>
+        </div>
+        <div class="skill-tag">Dark UI, Glassmorphism, Premium</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon ecom"><i class="fas fa-store"></i></div>
+        <div class="skill-name">E-Commerce Dev</div>
+        <div class="skill-level">
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          <span>85%</span>
+        </div>
+        <div class="skill-tag">Cart, WhatsApp Pay, Catalog</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon mobile"><i class="fas fa-mobile-screen"></i></div>
+        <div class="skill-name">Responsive Design</div>
+        <div class="skill-level">
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          <span>88%</span>
+        </div>
+        <div class="skill-tag">Mobile-First, All Devices</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon wa"><i class="fab fa-whatsapp"></i></div>
+        <div class="skill-name">WhatsApp Integration</div>
+        <div class="skill-level">
+          <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+          <span>95%</span>
+        </div>
+        <div class="skill-tag">Business API, Order System</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROJECTS SECTION ═══════════════════════ -->
+<section id="projects" class="projects-section">
+  <div class="container">
+    <div class="section-label reveal">My Work</div>
+    <div class="section-hdr reveal">
+      <h2>Featured <span>Projects</span></h2>
+      <p>Live projects jo main ne build kiye hain — real world mein chal rahe hain.</p>
+    </div>
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card featured reveal">
+        <div class="project-img">
+          <img src="images/hero-bg.png" alt="Rathore Mobile Store"/>
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="https://tanveerathore.github.io/rathore-mobile-store/" target="_blank" class="proj-link">
+                <i class="fas fa-external-link-alt"></i> Live Site
+              </a>
+            </div>
+          </div>
+          <div class="project-badge">Featured Project</div>
+        </div>
+        <div class="project-body">
+          <div class="project-type">E-Commerce Website</div>
+          <h3>Rathore Mobile Store</h3>
+          <p>
+            Amazon-style premium e-commerce store for a real mobile shop in Tibbi, Rajasthan. 
+            Features: 60+ products, WhatsApp checkout, cart system, admin price panel, 
+            mobile repair hub, customer reviews, countdown deals, and stunning dark UI.
+          </p>
+          <div class="project-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            <span>GitHub Pages</span><span>WhatsApp API</span>
+          </div>
+          <div class="project-highlights">
+            <div class="ph-item"><i class="fas fa-check-circle"></i> Live on GitHub Pages</div>
+            <div class="ph-item"><i class="fas fa-check-circle"></i> 60+ Real Products</div>
+            <div class="ph-item"><i class="fas fa-check-circle"></i> WhatsApp Order System</div>
+            <div class="ph-item"><i class="fas fa-check-circle"></i> Admin Price Manager</div>
+          </div>
+          <a href="https://tanveerathore.github.io/rathore-mobile-store/" target="_blank" class="btn-primary mt-1">
+            <i class="fas fa-external-link-alt"></i> View Live Project
+          </a>
+        </div>
+      </div>
+
+      <!-- Coming Soon Card -->
+      <div class="project-card coming-soon reveal">
+        <div class="cs-inner">
+          <div class="cs-icon"><i class="fas fa-code"></i></div>
+          <h3>Next Project</h3>
+          <p>Aur projects aane wale hain! Agar aap apna project banwana chahte hain, reach out karein.</p>
+          <a href="mailto:tanveerrthore24@gmail.com" class="btn-outline mt-1">
+            <i class="fas fa-paper-plane"></i> Work With Me
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ EDUCATION SECTION ══════════════════════ -->
+<section id="education" class="education-section">
+  <div class="container">
+    <div class="section-label reveal">Background</div>
+    <div class="section-hdr reveal">
+      <h2>Education & <span>Learning</span></h2>
+    </div>
+    <div class="edu-timeline">
+      <div class="edu-card reveal">
+        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="edu-body">
+          <div class="edu-year">2020 — 2022</div>
+          <h3>12th (Intermediate)</h3>
+          <div class="edu-school">N.M.P.G College, Hanumangarh, Rajasthan</div>
+          <p>Rajasthan Board se 12th complete kiya. Academics ke saath technology mein gehra interest develop kiya.</p>
+        </div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-icon self"><i class="fas fa-laptop-code"></i></div>
+        <div class="edu-body">
+          <div class="edu-year">2023 — Present</div>
+          <h3>Self-Taught Web Development</h3>
+          <div class="edu-school">Online Learning + Practical Projects</div>
+          <p>HTML, CSS, JavaScript, GitHub, UI/UX Design — sab khud se seekha. Best learning woh hai jo kaam karke aata hai — aur mera pehla live project iska proof hai!</p>
+        </div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-icon biz"><i class="fas fa-store"></i></div>
+        <div class="edu-body">
+          <div class="edu-year">Ongoing</div>
+          <h3>Business & Entrepreneurship</h3>
+          <div class="edu-school">Rathore Mobile Store, Tibbi, Rajasthan</div>
+          <p>Mobile store run karke business, customer service, inventory management, aur digital marketing ka real-world experience gain kiya.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT SECTION ════════════════════════ -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="section-label reveal">Let's Talk</div>
+    <div class="section-hdr reveal">
+      <h2>Get In <span>Touch</span></h2>
+      <p>Koi project hai? Koi idea hai? Main ek message ki door pe hoon!</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <h3>Baat Karte Hain! 🤝</h3>
+        <p>Main currently <strong>new projects ke liye available</strong> hoon. Chahe ek landing page ho ya full e-commerce store — batao, miltey hain!</p>
+        <div class="contact-items">
+          <a href="mailto:tanveerrthore24@gmail.com" class="contact-item">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div><strong>Email</strong><span>tanveerrthore24@gmail.com</span></div>
+          </a>
+          <a href="tel:+919461555827" class="contact-item">
+            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+            <div><strong>Phone / WhatsApp</strong><span>+91 94615 55827</span></div>
+          </a>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-location-dot"></i></div>
+            <div><strong>Location</strong><span>Tibbi, Hanumangarh, Rajasthan 🇮🇳</span></div>
+          </div>
+        </div>
+        <a href="https://wa.me/919461555827?text=Hello%20Tanveer!%20I%20want%20to%20discuss%20a%20web%20project." 
+           target="_blank" class="whatsapp-cta">
+          <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+      </div>
+      <div class="contact-form-wrap reveal-right">
+        <form class="contact-form" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" id="cf-name" placeholder="Aapka naam..." required/>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="cf-email" placeholder="aapka@email.com" required/>
+          </div>
+          <div class="form-group">
+            <label>Project Type</label>
+            <select id="cf-type">
+              <option value="">Select...</option>
+              <option>E-Commerce Store</option>
+              <option>Business Website</option>
+              <option>Portfolio Website</option>
+              <option>Landing Page</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea id="cf-msg" rows="4" placeholder="Apna project describe karein..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center">
+            <i class="fas fa-paper-plane"></i> Send via WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">&lt;<span>TR</span>/&gt;</div>
+    <p>Designed & Built with ❤️ by <strong>Tanveer Rathore</strong> — Tibbi, Rajasthan</p>
+    <p class="footer-copy">© 2026 All Rights Reserved</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
